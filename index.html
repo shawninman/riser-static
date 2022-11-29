@@ -5,8 +5,6 @@
         <!-- <link href="build/css/riser.css" rel="stylesheet"> -->
         <script src="https://cdn.tailwindcss.com"></script>
 
-        <script defer src="https://js.statickit.com/statickit.js"></script>
-
         <title>riser technologies</title>
     </head>
     <body class="border-t-8 bg-gray-100 border-amber-400 text-gray-700 flex flex-col">
@@ -87,50 +85,13 @@
                 a little about me. I'd love to know about you. Get in touch and let's talk things over.
             </p>
 
-            <div class="mt-4">
-                <form id="contact-form" >
-                    <label class="block">
-                        <span class="text-lg">Email</span>
-                        <input
-                            id="id-email"
-                            type="email"
-                            name="email"
-                            value=""
-                            placeholder="founder@growingstartup.com"
-                            required="required"
-                            class="form-input mt-1 block w-full text-gray-900">
-                      </label>
+            <p class="mt-4">Just send an email to shawn at [this domain].
 
-                    <label class="block mt-4">
-                        <span class="text-gray-700 text-lg">Tell me about your project</span>
-                        <textarea
-                            class="form-textarea mt-1 block w-full"
-                            rows="3"
-                            id="id-message"
-                            name="message"></textarea>
-                    </label>
-
-                    <button type="submit" class="mt-8 px-6 py-4 bg-cyan-600 text-lg text-white rounded-lg shadow-lg">Submit</button>
-                </form>
             </div>
         </div>
 
         <footer class="w-full pin-b mt-16">
             <p class="text-xs uppercase text-gray-500 text-center">Made with <img class="inline h-4 align-top" src="static/img/coffee.svg" alt="Coffee"> in Medina, OH</p>
         </footer>
-
-        <script>
-          window.sk=window.sk||function(){(sk.q=sk.q||[]).push(arguments)};
-
-          sk('form', '#contact-form', {
-            id: 'b5039a66feff',
-            onSuccess: function(config) {
-                var h = config.h;
-                var form = config.form;
-                var replacement = h("div.form-message", "Thanks for your message. I'll be in touch soon.");
-                form.parentNode.replaceChild(replacement, form);
-            }
-          });
-        </script>
     </body>
 </html>
